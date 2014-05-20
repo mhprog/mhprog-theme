@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <!-- TODO: http:// -> // once deployed -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel='stylesheet' type='text/css' href='styles.css' />
 <script src="js/nav.js"></script>
+<script src="js/anyslider.js"></script>
+<script>$(function(){$('#motd').AnySlider({showControls:false})});</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
 
-<div id="background-container"></div>
+<div class="no-js">Javascript is required to use this site.</div>
 
-<nav class="cf">
+<nav class="cf site-nav">
 	<ul class="cf">
 		<li><a href="#">Home</a></li>
 		<li><a href="#">Menu 1</a></li>
@@ -24,6 +26,29 @@
 
 <div id="title">
 	mhprog
+</div>
+
+<div id="motd-wrapper">
+	<div id="motd">
+		<div class="motd-slide" id="motd-1">
+			<div class="motd-content">
+				<h2>MOTD #1</h2>
+				<span>This is some nice, descriptive text about the first MOTD.</span>
+			</div>
+		</div>
+		<div class="motd-slide" id="motd-2">
+			<div class="motd-content">
+				<h2>MOTD #2</h2>
+				<p>This is some nice, descriptive text about the second MOTD.</p>
+			</div>
+		</div>
+		<div class="motd-slide" id="motd-3">
+			<div class="motd-content">
+				<h2>MOTD #3</h2>
+				<span>This is some nice, descriptive text about the third MOTD.</span>
+			</div>
+		</div>
+	</div>
 </div>
 
 </body>

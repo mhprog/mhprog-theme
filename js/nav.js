@@ -1,4 +1,6 @@
 $(function() {
+	$('.no-js').removeAttr('class').addClass('js');
+
     var mobilenav = $('#mobile-nav');
     var menu = $('nav ul');
     var menuHeight = menu.height();
